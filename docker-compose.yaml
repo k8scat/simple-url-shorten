@@ -9,5 +9,5 @@ services:
    - 443:443
   volumes:
    - ./shence.conf:/etc/nginx/conf.d/shence.conf:ro
-   - ./simple-url-shorten:/usr/local/openresty/lualib/short
+   - ./simple-url-shorten:/usr/local/openresty/lualib/short:ro
   container_name: shence_url_shorten
